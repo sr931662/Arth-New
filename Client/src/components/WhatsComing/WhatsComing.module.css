@@ -1,0 +1,52 @@
+
+.container {
+    text-align: center;
+    padding: 50px 20px;
+    /* background-color: #f9f9f9; */
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .subheading {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .featureCard {
+    width: 250px;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    opacity: 0; /* Initially hidden for animation */
+    transform: translateY(50px);
+  }
+  
+  .icon {
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: black;
+  }
+  

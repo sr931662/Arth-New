@@ -1,0 +1,128 @@
+/* landing.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+.landing {
+  width: 100vw;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  padding-top: 4vh;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.sectionHeadText {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Timeline Layout */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.timelineItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.timelineItem:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Connector Line */
+.timelineConnector {
+  position: absolute;
+  width: 5px;
+  background: #915EFF;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+/* Feature Cards */
+.featureCard {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 350px;
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+  border: 2px solid transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.featureCard:hover {
+  transform: scale(1.05);
+  border-color: #915EFF;
+}
+
+.featureIcon {
+  font-size: 2rem;
+  background: #915EFF;
+  color: white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.timelineItem:nth-child(even) .featureIcon {
+  left: auto;
+  right: -30px;
+}
+
+.featureCard h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.featureCard p {
+  font-size: 1rem;
+  color: #000;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sectionHeadText {
+    font-size: 2rem;
+  }
+
+  .timelineItem {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .featureCard {
+    width: 90%;
+  }
+
+  .featureIcon {
+    position: relative;
+    left: auto;
+    right: auto;
+    margin: auto;
+    transform: translateY(0);
+  }
+}

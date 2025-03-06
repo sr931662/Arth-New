@@ -1,0 +1,86 @@
+.Navbar_container {
+    /* background-color: black; */
+    z-index: 1000;
+    /* width: 97vw; */
+    height: 5.2vh;
+    margin-top: 3vh;
+    display: grid;
+    gap: 30px;
+    padding: 0 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.nav_menu {
+    margin: auto 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav_menu_prof {
+    margin: auto 0;
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+    justify-content: flex-end;
+}
+.username {
+    margin: auto 0;
+    display: flex;
+    color: gray;
+    text-transform: uppercase;
+    gap: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    justify-content: flex-end;
+}
+.nav_menu_item {
+    padding: 10px;
+    font-size: 12px;
+    color: gray;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.nav_menu_item:hover {
+    color: white;
+    font-weight: 600;
+}
+
+
+.logo {
+    margin: auto auto;
+    font-size: 45px;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.prof_item {
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: gray;
+    margin: auto 0;
+    font-weight: 700;
+
+}
+
+.prof_item:hover {
+    color: #fff;
+}
+
+.sign_btn {
+    background-color: #fff;
+    border-radius: 10px;;
+    padding: 5px 10px;
+    color: #000;
+    text-align: center;
+}
+
+.username {
+    color: white;
+}
